@@ -39,12 +39,10 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Bonjour, C'est Ulrich",
-    en: "Hi, I'm Ulrich",
+    en: "Hi, I'm Ulrich"
   },
   subtitle: "Fullstack Developer",
   description: {
-    de:"Je suis Ulrich, un développeur fullstack avec l'objectif d'avancer dans ma carrière et de participer à des projets inspirants. Je présente ici mon travail et ma passion pour le développement web. Développons ensemble des solutions numériques et façonnons l'avenir !",
     en: "I'm Ulrich, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
@@ -73,8 +71,6 @@ export const headerIntroData = {
 export const projectsData = [
   {
     title: "Tasty App",
-    description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
       "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
     technologies: [
@@ -102,8 +98,6 @@ export const projectsData = [
   },
   {
     title: "Silentmoon",
-    description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
     description_EN:
       "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
     technologies: [
@@ -135,8 +129,6 @@ export const projectsData = [
   },
   {
     title: "Furniture Organizer",
-    description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
     description_EN:
       "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
     technologies: [
@@ -169,7 +161,6 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
     en: "More Projects on Github",
   },
 } as const;
@@ -303,16 +294,16 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Accueil", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Mes compétences", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Mes projets", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "A propos", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Me contacter", en: "Contact", hash: "#contact", icon: GoMail },
+  { en: "Home", hash: "#home", icon: GoHome },
+  { en: "Skills", hash: "#skills", icon: GoStack },
+  { en: "Projects", hash: "#projects", icon: GoProject },
+  { en: "About me", hash: "#about-me", icon: GoPerson },
+  { en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  {  en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  {  en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
@@ -340,12 +331,10 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
@@ -355,26 +344,6 @@ export const aboutMeData = {
   title_EN: "About me",
   description: "Ein paar Codeschnippsel über mich",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
-    {
-      title: "Die Schaltkreise meines Herzens",
-      description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
-      icon: hardwareicon,
-    },
-    {
-      title: "Auf der Überholspur des Lebens",
-      description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
-      icon: caricon,
-    },
-    {
-      title: "Entdeckungsfreude als Lebensmotto",
-      description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
-      icon: travelicon,
-    },
-  ],
   paragraphs_EN: [
     {
       title: "The Circuits of My Heart",
@@ -399,23 +368,19 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -423,12 +388,10 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -436,12 +399,10 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -449,20 +410,17 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
       en: "Send",
     },
   },
@@ -475,11 +433,8 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -487,26 +442,22 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
+
     en: "Please fill in your name",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
     en: "EN",
   },
 } as const;
