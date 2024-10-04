@@ -76,7 +76,7 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Dashboard",
+    title: "DASHBOARD",
     description_EN:
       "The objective of the project outlined in the document is to implement a web application similar to Netvibes, where users can subscribe to different services and configure widgets for those services.",
     technologies: [
@@ -106,7 +106,7 @@ export const projectsData = [
     },
   },
   {
-    title: "My Showtime",
+    title: "MY SHOWTIME",
     description_EN:
       "Your project *My Show Time* is a ticket booking website for concerts and festivals. It includes both a front office for users to browse, select, and book concerts, and a back office for administrators to manage concerts and view booking statistics​.",
     technologies: [
@@ -136,7 +136,7 @@ export const projectsData = [
     },
   },
   {
-    title: "Trelltech",
+    title: "TRELLTECH",
     description_EN:
       "Trelltech is a project management application built using the Trello API. It allows users to create and manage workspaces, boards, lists, and cards, offering a seamless project management experience. The app focuses on delivering a polished user interface (UI) and user experience (UX), adhering to best practices for the chosen framework and platform.",
     technologies: [
@@ -167,7 +167,38 @@ export const projectsData = [
     },
   },
   {
-    title: "Rotten Tomato",
+    title: "YOWL",
+    description_EN:
+      "The objective of the YOWL project is to develop a web application that allows users to comment on any content found on the internet and share those comments with the YOWL user community. The goal is to decentralize comments from traditional social networks and offer a new perspective on web content through participatory feedback and open-source intelligence (OSINT)",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "Vuejs", icon: vuejsicon },
+      { name: "Laravel", icon: laravelIcon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "Trello", icon: trelloicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "REST api", icon:apiicon },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+    ],
+    image: silentmoonMockup1,
+    deploymenturl: "https://yowl-mzov.vercel.app/",
+    githuburl:
+      "https://github.com/EpitechCodingAcademyPromo2024/C-DEV-160-COT-1-2-yowl-ulrich2.assogba",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
+    title: "MY ROTTEN TOMATOES",
     description_EN:
       "Your project *My Rotten Tomatoes* is a film presentation and review website where users can view, rate, comment on movies, and filter them by genre, date, or director. Administrators can manage users, movies, and access film rating statistics​.",
     technologies: [
