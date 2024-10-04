@@ -7,6 +7,7 @@ import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
+import hbsIcon from "../../assets/icons/hbs.svg"
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
@@ -15,17 +16,22 @@ import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
+import laravelIcon from "../../assets/icons/laravel.svg";
+import nestjsIcon from "../../assets/icons/nestjs.svg";
+import postgresqlIcon from "../../assets/icons/posgresql.svg";
+import prismaIcon from "../../assets/icons/prisma.svg"
 import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
+//import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import tastyMockup from "../../assets/img/file5.jpeg";
+import instorMockup from "../../assets/img/file3.jpeg";
+import silentmoonMockup from "../../assets/img/file4.jpeg";
+import silentmoonMockup1 from "../../assets/img/flie6.jpeg";
 import profilepicture from "../img/file2.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -70,23 +76,26 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Dashboard",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "The objective of the project outlined in the document is to implement a web application similar to Netvibes, where users can subscribe to different services and configure widgets for those services.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
+      {name: "Typescript" , icon: typescripticon},
+      {name: "Nestjs" , icon: nestjsIcon},
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
       { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
       { name: "Canva", icon: canvaicon },
       { name: "Netlify", icon: netlifyicon },
       { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -97,19 +106,18 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "My Showtime",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Your project *My Show Time* is a ticket booking website for concerts and festivals. It includes both a front office for users to browse, select, and book concerts, and a back office for administrators to manage concerts and view booking statistics​.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
+      { name: "Nestsjs", icon: nestjsIcon },
+      { name: "Hbs", icon:  hbsIcon },
       { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
@@ -117,7 +125,7 @@ export const projectsData = [
     image: silentmoonMockup,
     deploymenturl: "https://silentmoon-grpw.onrender.com/",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/EpitechCodingAcademyPromo2024/C-COD-250-COT-2-3-showtime-gracias.daga/tree/main",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -128,26 +136,58 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Trelltech",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "Trelltech is a project management application built using the Trello API. It allows users to create and manage workspaces, boards, lists, and cards, offering a seamless project management experience. The app focuses on delivering a polished user interface (UI) and user experience (UX), adhering to best practices for the chosen framework and platform.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "Trello", icon: trelloicon },
       { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
+      { name: "REST api", icon:apiicon },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+    ],
+    image: silentmoonMockup1,
+    deploymenturl: "",
+    githuburl:
+      "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
+    title: "Rotten Tomato",
+    description_EN:
+      "Your project *My Rotten Tomatoes* is a film presentation and review website where users can view, rate, comment on movies, and filter them by genre, date, or director. Administrators can manage users, movies, and access film rating statistics​.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "Next js", icon: nextjsicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Postgresql", icon: postgresqlIcon },
       { name: "Express", icon: expressiconwhite },
+      { name: "REST Api", icon: apiicon },
       { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "http://coding-my-rotten-tomatoes.azurewebsites.net/",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -176,10 +216,16 @@ export const skillsDataWeb = [
         color: "#F1662A",
       },
       {
-        title: "HTML",
-        hash: "#html",
-        icon: htmlicon,
-        color: "#F1662A",
+        title: "Laravel",
+        hash: "#laravel",
+        icon: laravelIcon,  
+        color: "#F05340",   
+      },
+      {
+      title: "NestJS",
+      hash: "#nestjs",
+      icon: nestjsIcon,  
+      color: "#E0234E",  
       },
       {
         title: "CSS",
@@ -193,6 +239,18 @@ export const skillsDataWeb = [
         icon: javascripticon,
         color: "#F7DF1E",
       },
+      {
+      title: "PostgreSQL",
+      hash: "#postgresql",
+      icon: postgresqlIcon,  
+      color: "#336791",  
+    },
+    {
+      title: "Prisma",
+      hash: "#prisma",
+      icon: prismaIcon,      
+      color: "#0C344B",      
+    },
       {
         title: "TypeScript",
         hash: "#TypeScript",
@@ -216,6 +274,11 @@ export const skillsDataWeb = [
         hash: "#Node.js",
         icon: nodejsicon,
         color: "#339933",
+      },
+      {
+        title: "Handlebars",
+        hash: "#hbs",
+        icon: hbsIcon,          
       },
       {
         title: "Tailwind",
@@ -313,17 +376,17 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "www.linkedin.com/in/ulrich-g-assogba-5a1025217",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/EpitechCodingAcademyPromo2024",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:ulrich2.assogba@epitech.eu",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -340,21 +403,19 @@ export const quotesData = [
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
   description_EN: "A few code snippets about me",
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "The digital world",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware.",
       icon: hardwareicon,
     },
     {
       title: "On the Fast Lane of Life",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+        "Besides coding, I like to be on the fast lane - in the truest sense of the word. The cybersecurity is my passion, and I enjoy being on unknown roads with powerful machines.",
       icon: caricon,
     },
     {

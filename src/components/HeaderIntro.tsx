@@ -15,7 +15,6 @@ const HeaderIntro: React.FC = () => {
   const handleCvUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files.length > 0) {
       setCvFile(event.target.files[0]);
-      // Logique de gestion du fichier CV
       console.log("Uploaded CV:", event.target.files[0].name);
     }
   };
@@ -42,6 +41,7 @@ const HeaderIntro: React.FC = () => {
         {headerIntroData.description.en}
       </p>
 
+      {/* Conteneur des boutons incluant le bouton Upload CV */}
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
         {headerIntroData.buttons.map((button, index) => (
           <Button
@@ -56,16 +56,14 @@ const HeaderIntro: React.FC = () => {
             }}
           />
         ))}
-      </div>
 
-      {/* Bouton pour uploader le CV avec icône */}
-      <div className="cv-upload-container mb-12 flex flex-col items-center">
+        {/* Bouton Upload CV avec icône */}
         <label
           htmlFor="cv-upload"
           className="bg-[--orange] text-white font-bold py-2 px-6 rounded-lg cursor-pointer flex items-center gap-2"
         >
           <FiUpload className="text-xl" /> {/* Icône de téléchargement */}
-          Upload CV
+          Download CV
         </label>
         <input
           type="file"
@@ -74,12 +72,13 @@ const HeaderIntro: React.FC = () => {
           onChange={handleCvUpload}
           className="hidden"
         />
-        {cvFile && (
-          <p className="text-sm mt-2 text-center">
-            Uploaded: {cvFile.name}
-          </p>
-        )}
       </div>
+
+      {cvFile && (
+        <p className="text-sm mt-2 text-center">
+          Uploaded: {cvFile.name}
+        </p>
+      )}
 
       <div className="scroll-down-container animate-bounce flex gap-6">
         <BsMouse className="text-[2.6rem]" />
