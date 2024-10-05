@@ -26,11 +26,9 @@ const ProjectSlider: React.FC = () => {
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const notifyServerRequest = () => {
-    if (language === "DE") {
-      toast.info(toastMessages.loadingProject.de);
-    } else {
+  
       toast.info(toastMessages.loadingProject.en);
-    }
+    
   };
 
   return (
@@ -104,9 +102,7 @@ const ProjectSlider: React.FC = () => {
                     <h2>{project.title}</h2>
 
                     <p className="text-white">
-                      {language === "DE"
-                        ? project.description
-                        : project.description_EN}
+                      {project.description_EN}
                     </p>
                     <div className="technologies">
                       <h3>
@@ -185,9 +181,7 @@ const ProjectSlider: React.FC = () => {
                   />
                 </div>
                 <p className="text-white  max-lg:text-4xl">
-                  {language === "DE"
-                    ? project.description
-                    : project.description_EN}
+                    {project.description_EN}
                 </p>
 
                 <div className="technologies">

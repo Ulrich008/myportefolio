@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import React, {  } from "react";
 import Button from "./Button";
 import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { BsMouse } from "react-icons/bs";
-import { FiUpload } from "react-icons/fi"; // Import de l'icône de téléchargement
+import { FiDownload } from "react-icons/fi";
+import cv from "../assets/doc/CV_Ulrich_ASSOGBA.pdf";
 
 const HeaderIntro: React.FC = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const [cvFile, setCvFile] = useState<File | null>(null);
 
-  const handleCvUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files && event.target.files.length > 0) {
-      setCvFile(event.target.files[0]);
-      console.log("Uploaded CV:", event.target.files[0].name);
-    }
-  };
 
   return (
     <section
@@ -58,27 +52,15 @@ const HeaderIntro: React.FC = () => {
         ))}
 
         {/* Bouton Upload CV avec icône */}
-        <label
-          htmlFor="cv-upload"
+        <a href={cv}
+        download="MyCV.pdf"
           className="bg-[--orange] text-white font-bold py-2 px-6 rounded-lg cursor-pointer flex items-center gap-2"
         >
-          <FiUpload className="text-xl" /> {/* Icône de téléchargement */}
-          Download CV
-        </label>
-        <input
-          type="file"
-          id="cv-upload"
-          accept=".pdf,.doc,.docx"
-          onChange={handleCvUpload}
-          className="hidden"
-        />
+            <FiDownload className="text-xl" /> 
+        Download CV
+      </a>
       </div>
 
-      {cvFile && (
-        <p className="text-sm mt-2 text-center">
-          Uploaded: {cvFile.name}
-        </p>
-      )}
 
       <div className="scroll-down-container animate-bounce flex gap-6">
         <BsMouse className="text-[2.6rem]" />

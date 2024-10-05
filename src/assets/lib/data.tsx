@@ -32,6 +32,7 @@ import tastyMockup from "../../assets/img/file5.jpeg";
 import instorMockup from "../../assets/img/file3.jpeg";
 import silentmoonMockup from "../../assets/img/file4.jpeg";
 import silentmoonMockup1 from "../../assets/img/flie6.jpeg";
+import silentmoonMockup2 from "../../assets/img/file7.png";
 import profilepicture from "../img/file2.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -106,9 +107,9 @@ export const projectsData = [
     },
   },
   {
-    title: "MY SHOWTIME",
+    title: "MY SHOW TIME",
     description_EN:
-      "Your project *My Show Time* is a ticket booking website for concerts and festivals. It includes both a front office for users to browse, select, and book concerts, and a back office for administrators to manage concerts and view booking statistics​.",
+      "Your project My Show Time is a ticket booking website for concerts and festivals. It includes both a front office for users to browse, select, and book concerts, and a back office for administrators to manage concerts and view booking statistics​.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -184,7 +185,7 @@ export const projectsData = [
       { name: "Figma", icon: figmaicon },
       { name: "Render", icon: rendericon },
     ],
-    image: silentmoonMockup1,
+    image: silentmoonMockup2,
     deploymenturl: "https://yowl-mzov.vercel.app/",
     githuburl:
       "https://github.com/EpitechCodingAcademyPromo2024/C-DEV-160-COT-1-2-yowl-ulrich2.assogba",
@@ -200,7 +201,7 @@ export const projectsData = [
   {
     title: "MY ROTTEN TOMATOES",
     description_EN:
-      "Your project *My Rotten Tomatoes* is a film presentation and review website where users can view, rate, comment on movies, and filter them by genre, date, or director. Administrators can manage users, movies, and access film rating statistics​.",
+      "Your project My Rotten Tomatoes is a film presentation and review website where users can view, rate, comment on movies, and filter them by genre, date, or director. Administrators can manage users, movies, and access film rating statistics​.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
